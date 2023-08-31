@@ -1,0 +1,15 @@
+.sectionContainer{
+    display:flex;
+    flex-direction:column;
+    gap:.5em;
+    justify-content:space-between;
+}
+
+
+.sectionContainer .Title{
+    color:#212121;
+}
+
+.sectionContainer .Description{
+    color:#c0c0c0;
+}
