@@ -1,0 +1,21 @@
+.Navbar{
+    padding:3rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin-bottom: 1.2rem;
+}
+
+.Navbar .logoBox{
+    display:flex;
+    flex-direction:row;
+    align-self:center;
+    align-items:center;
+}
+
+.Navbar .Medias{
+    display:flex;
+    flex-direction:row;
+    align-self:center;
+    align-items:center;
+}
