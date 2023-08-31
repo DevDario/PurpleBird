@@ -1,0 +1,6 @@
+.logoBox{
+    display:flex;
+    flex-direction:row;
+    align-self:center;
+    align-items:center;
+}
