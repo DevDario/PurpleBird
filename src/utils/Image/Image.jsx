@@ -48,8 +48,8 @@ Image.defaultProps = {
     imageTitle:"Select the receptor",
     textAlign:"center",
     imageDescription:"Here you have to inform your receptor's email"+
-                     "so he/she can receive your amazing message" +
-                     "more easly and faster",
+                     " so he/she can receive your amazing message" +
+                     " more easly and faster",
     radius: "10px"
 }
 
