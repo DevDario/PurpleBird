@@ -13,3 +13,15 @@
 .sectionContainer .Description{
     color:#c0c0c0;
 }
+
+@media only screen and (max-width: 600px){
+
+    .sectionContainer .Title{
+        font-size:1.8em;
+    }
+    
+    .sectionContainer .Description{
+        font-size:.8em;
+    }
+
+}
