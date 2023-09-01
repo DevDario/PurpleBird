@@ -47,9 +47,9 @@ Image.defaultProps = {
     height: "250px",
     imageTitle:"Select the receptor",
     textAlign:"left",
-    imageDescription:"Here you have to inform your receptor's email \n"+
-    "so he/she can receive your amazing message \n" +
-    "more easly and faster",
+    imageDescription:"Here you have to inform your receptor's email"+
+                     "so he/she can receive your amazing message" +
+                     "more easly and faster",
     radius: "10px"
 }
 
