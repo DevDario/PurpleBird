@@ -46,7 +46,7 @@ Image.defaultProps = {
     width: "400px",
     height: "250px",
     imageTitle:"Select the receptor",
-    textAlign:"left",
+    textAlign:"center",
     imageDescription:"Here you have to inform your receptor's email"+
                      "so he/she can receive your amazing message" +
                      "more easly and faster",
