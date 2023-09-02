@@ -50,3 +50,26 @@ footer{
 .credits .hearth{
     color:orange;
 }
+
+@media only screen and (max-width: 768px){
+
+    .footerContainer .about{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .aboutDescription{
+        font-size:.8em;
+        text-align:center;
+        align-self: center;
+        align-items: center;
+    }
+
+    .credits,
+    .iconsSource{
+        display:flex;
+        justify-content: center;
+    }
+    
+}
