@@ -8,6 +8,7 @@ import EmailImage from './assets/emailImage.png'
 import Feature from './utils/Feature/Feature'
 import { FaSmile, FaFastForward } from 'react-icons/fa'
 import { BsUniversalAccessCircle } from 'react-icons/bs'
+import Input from './utils/Input/Input'
 
 function App() {
 
@@ -73,7 +74,10 @@ function App() {
         </div>
       </section>
 
-
+      <section className="user-email">
+          <h2>Type your email</h2>
+          <Input />
+      </section>
 
       <Footer/>
     </div>
