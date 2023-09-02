@@ -30,7 +30,7 @@ Feature.propTypes = {
 
 Feature.defaultProps = {
     title: "it's easy",
-    description: "PurpleBird it's easy to use and very acessible for everyone. We had the ideia of creating something useful, intuitive and very user-frienfly so everyone can enjoy it as much as us",
+    description: "PurpleBird it's easy to use and very acessible for everyone. We had the ideia of creating something useful, intuitive and very user-friendly so everyone can enjoy it as much as us",
     circleWidth: "90px"
 }
 
