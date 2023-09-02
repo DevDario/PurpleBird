@@ -1,0 +1,41 @@
+.featureContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    align-self:center;
+}
+
+.featureContainer .circle{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 10rem;
+    background-color: #212121;
+    border:2px solid rgb(191, 141, 255);
+}
+
+.circle{
+    display:flex;
+    justify-content:center;
+    align-self:center;
+    align-items:center;
+}
+
+.featureContainer .title{
+    color:#212121;
+}
+
+.featureContainer .description{
+    color:#c0c0c0;
+}
+
+@media only screen and (max-width: 600px){
+
+    .featureContainer .title{
+        font-size:1.8em;
+    }
+    
+    .featureContainer .description{
+        font-size:.8em;
+    }
+}
