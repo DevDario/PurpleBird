@@ -4,6 +4,15 @@ section{
     align-items:center;
 }
 
+.sectionTitle{
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    align-self:center;
+    text-align:center;
+    font-size:2.4em;
+}
+
 .instructions{
     display:flex;
     flex-direction:row;
@@ -16,5 +25,24 @@ section{
         flex-direction:column;
         justify-content:space-evenly;
         gap:.8em;
+    }
+}
+
+.features-info{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+@media only screen and (max-width: 600px){
+    .features-info{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        gap:.8em;
+    }
+
+    .sectionTitle{
+        font-size:2.2em;
     }
 }
