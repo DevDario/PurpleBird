@@ -20,3 +20,9 @@ body{
   font-size:3rem;
   line-height: 5rem;
 }
+
+@media only screen and (max-width: 768px){
+  .homeTitle{
+      font-size:2em;
+  }
+}
