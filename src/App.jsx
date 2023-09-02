@@ -5,6 +5,9 @@ import Image from './utils/Image/Image'
 import ReceptorImage from './assets/receptorImage.png'
 import SendImage from './assets/safeImage.png'
 import EmailImage from './assets/emailImage.png'
+import Feature from './utils/Feature/Feature'
+import { FaSmile, FaFastForward } from 'react-icons/fa'
+import { BsUniversalAccessCircle } from 'react-icons/bs'
 
 function App() {
 
@@ -46,6 +49,28 @@ function App() {
 
       <section className="features">
 
+        <h1 className="sectionTitle">
+          Why you should use it
+        </h1>
+
+        <div className="features-info">
+          <Feature
+            icon={<BsUniversalAccessCircle size={"40px"} color={"#505050"} cursor={"help"}/>}
+          />
+          
+          <Feature
+            icon={<FaSmile size={"40px"} color={"#505050"} cursor={"help"}/>}
+            alternativeText={"fun to use icon"}
+            title={"it's fun"}
+            description={"with an intuitive and user-friendly UI, we focused in propsing a fun experience for all users, using calm colors, and smooth fonts, with an easy and fast way to send your emails"}
+          />
+          <Feature
+            icon={<FaFastForward size={"40px"} color={"#505050"} cursor={"help"}/>}
+            alternativeText={"fast tool icon"}
+            title={"it's fast"}
+            description={"Our tool is very fast, so you dont have to waste your time login in others services to simple send an email. We use an simple and fast protocol and tools, for you to have a better and faster experience"}
+          />
+        </div>
       </section>
 
 
