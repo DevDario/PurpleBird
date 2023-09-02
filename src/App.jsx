@@ -9,8 +9,11 @@ import Feature from './utils/Feature/Feature'
 import { FaSmile, FaFastForward } from 'react-icons/fa'
 import { BsUniversalAccessCircle } from 'react-icons/bs'
 import Input from './utils/Input/Input'
+import { useState } from 'react';
 
 function App() {
+
+  const [userEmail, setUserEmail] = useState("")
 
   return (
     <div className='app'>
@@ -76,7 +79,10 @@ function App() {
 
       <section className="user-email">
           <h2>Type your email</h2>
-          <Input />
+          <Input 
+            value={userEmail}
+            event={(e) => {setUserEmail(e.target.value)}}
+          />
       </section>
 
       <Footer/>
