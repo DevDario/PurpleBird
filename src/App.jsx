@@ -62,7 +62,7 @@ function App() {
             icon={<FaSmile size={"40px"} color={"#505050"} cursor={"help"}/>}
             alternativeText={"fun to use icon"}
             title={"it's fun"}
-            description={"with an intuitive and user-friendly UI, we focused in propsing a fun experience for all users, using calm colors, and smooth fonts, with an easy and fast way to send your emails"}
+            description={"with an intuitive and user-friendly UI, we focused in proposing a fun experience for all users, using calm colors, and smooth fonts, with an easy and fast way to send your emails"}
           />
           <Feature
             icon={<FaFastForward size={"40px"} color={"#505050"} cursor={"help"}/>}
