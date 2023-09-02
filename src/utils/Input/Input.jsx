@@ -1,12 +1,13 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import style from './Input.module.css'
-const Input = ({type, textAlign, textColor, placeholder, padding, borderRadius,name}) => {
+const Input = ({type, textAlign, textColor, placeholder, width, height, borderRadius,name}) => {
   return (
     <input className={style.input} type={type} placeholder={placeholder} autoComplete={"true"} name={name} style={{
         color: textColor,
         textAlign:textAlign,
-        padding:padding,
+        width:width,
+        height:height,
         borderRadius:borderRadius
     }}/>
   )
@@ -17,7 +18,8 @@ Input.propTypes = {
     textAlign: propTypes.string,
     textColor:propTypes.string,
     placeholder: propTypes.string.isRequired,
-    padding:propTypes.string,
+    width:propTypes.string,
+    height:propTypes.string,
     borderRadius:propTypes.string,
     name:propTypes.string.isRequired
 }
@@ -27,7 +29,8 @@ Input.defaultProps = {
     textAlign: "center",
     textColor:"#c0c0c0",
     placeholder: "type your email here",
-    padding:".8rem 30rem",
+    width:"80%",
+    height:"4.6rem", 
     borderRadius:"5rem",
     name:"email"
 }
