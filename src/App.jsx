@@ -43,6 +43,13 @@ function App() {
           height={"240px"}
         />
       </section>
+
+      <section className="features">
+
+      </section>
+
+
+
       <Footer/>
     </div>
   )
