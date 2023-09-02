@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import style from './Input.module.css'
 const Input = ({type, textAlign, textColor, placeholder, padding, borderRadius,name}) => {
   return (
-    <input className={style.input} type={type} placeholder={placeholder} name={name} style={{
+    <input className={style.input} type={type} placeholder={placeholder} autoComplete={"true"} name={name} style={{
         color: textColor,
         textAlign:textAlign,
         padding:padding,
