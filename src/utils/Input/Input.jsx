@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import style from './Input.module.css'
-const Input = ({type, textAlign, textColor, placeholder, width, height, borderRadius,name}) => {
+const Input = ({type, value, textAlign, textColor, placeholder, width, height, borderRadius,name,event}) => {
   return (
     <input className={style.input} type={type} placeholder={placeholder} autoComplete={"true"}  name={name} style={{
         color: textColor,
@@ -9,7 +9,7 @@ const Input = ({type, textAlign, textColor, placeholder, width, height, borderRa
         width:width,
         height:height,
         borderRadius:borderRadius
-    }} required/>
+    }} required value={value} onChange={event}/>
   )
 }
 
@@ -21,7 +21,9 @@ Input.propTypes = {
     width:propTypes.string,
     height:propTypes.string,
     borderRadius:propTypes.string,
-    name:propTypes.string.isRequired
+    name:propTypes.string.isRequired,
+    value: propTypes.string.isRequired,
+    event: propTypes.func.isRequired
 }
 
 Input.defaultProps = {
