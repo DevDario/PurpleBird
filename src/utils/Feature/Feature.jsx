@@ -24,7 +24,7 @@ const Feature = ({title, description, icon, circleWidth}) => {
 Feature.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
-    icon: PropTypes.elementType.isRequired,
+    icon: PropTypes.any.isRequired,
     circleWidth: PropTypes.string.isRequired,
 }
 
