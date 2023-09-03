@@ -62,3 +62,15 @@ section{
         width:50%;
     }
 }
+
+
+.hide{
+    transition:all 400ms ease;
+    display:none;
+}
+
+
+.show{
+    transition:all 400ms ease;
+    display:flex;
+}
