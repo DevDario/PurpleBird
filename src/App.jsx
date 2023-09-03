@@ -21,9 +21,22 @@ function App() {
 
       const formSection = document.getElementsByClassName('form-section')[0]
       const emailSection = document.getElementsByClassName('user-email')[0]
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const email = userEmail;
 
-      emailSection.classList.add('hide')
-      formSection.classList.add('show')
+      //checks if the email is correct
+
+      if (emailPattern.test(email)) {
+        
+        emailSection.classList.add('hide')
+        formSection.classList.add('show')
+
+      } else {
+
+          alert('Invalid email address');
+          setUserEmail("")
+      }
+
   }
 
   return (
