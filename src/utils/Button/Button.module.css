@@ -1,0 +1,36 @@
+.button{
+    margin:.7em auto;
+    padding:.8rem 4rem;
+    border:none;
+    color:#fcfcfb;
+    background-color: #212121;
+    border-radius:9rem;
+    align-items:center;
+    align-self:center;
+    cursor: pointer;
+    transition:all 200ms ease-out;
+}
+
+.button:hover{
+    transition:all 200ms ease-in;
+    background: linear-gradient(135deg, #a2c4fcd5 0%, #f3c1ffe1, #fdfd82e3 100%);
+    padding:.8rem 4.5rem;
+}
+
+.button:hover a {
+    color:#212121;
+}
+
+.button a{
+    text-decoration:none;
+    color:#fcfcfb;
+    align-items:center;
+    align-self:center;
+    font-weight:200;
+}
+
+@media only screen and (max-width: 768px){
+    .button{
+        width: 30%;
+    }
+}
