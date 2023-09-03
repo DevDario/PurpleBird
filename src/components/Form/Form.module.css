@@ -1,0 +1,52 @@
+
+.form{
+    display:flex;
+    margin:0 auto;
+}
+
+.formSection{
+    display:flex;
+    flex-direction:column;
+    gap:.3em;
+    background: linear-gradient(135deg, #4089ffb0 0%, #d83dff83, #ffff6633 100%);
+    width:100%;
+    height:85%;
+    padding:.8rem;
+    margin:0 auto;
+    border-radius:2rem;
+}
+
+
+.formSection label{
+    font-weight:200;
+    color:#212121;
+}
+
+.formSection input::placeholder{
+    color:#c0c0c0;
+}
+
+.formSection input{
+    border:none;
+    background-color: #212121;
+    color:#fcfcfb;
+    padding:1em;
+}
+
+.formSection input[type="text"]{
+    border:none;
+    background-color: #212121;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .formSection{
+        width: 70%;
+        height: 80%;
+        margin:0 auto;
+    }
+
+    .formSection .input[type="text"]{
+        height:100px;
+    }
+  }
