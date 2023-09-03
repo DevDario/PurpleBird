@@ -20,7 +20,7 @@ function App() {
       <Navbar/>
 
       <h1 className='homeTitle'>
-        Send a fast E-mail to your <br/>
+        Send fast E-mails to your <br/>
         friend using this amazing <br/>
         browser tool !
       </h1>
