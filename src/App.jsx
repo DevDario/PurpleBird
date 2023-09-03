@@ -11,10 +11,16 @@ import { BsUniversalAccessCircle } from 'react-icons/bs'
 import Input from './utils/Input/Input'
 import { useState } from 'react';
 import Button from './utils/Button/Button'
+import Form from './components/Form/Form'
 
 function App() {
 
   const [userEmail, setUserEmail] = useState("")
+  const [isSectionVisible, setIsSectionVisible] = useState(false)
+
+  const toggleSectionVisibility = () => {
+    setIsSectionVisible(!isSectionVisible)
+  }
 
   const handleShowSectionButton = (e) => {
       e.preventDefault()
@@ -30,6 +36,7 @@ function App() {
         
         emailSection.classList.add('hide')
         formSection.classList.add('show')
+        toggleSectionVisibility()
 
       } else {
 
@@ -110,6 +117,16 @@ function App() {
           <Button 
             event = {handleShowSectionButton}
           />
+      </section>
+
+      <section className="form-section">
+        {
+          isSectionVisible && (
+            <Form 
+              
+            />
+          )
+        }
       </section>
 
       <Footer/>
