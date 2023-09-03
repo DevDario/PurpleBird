@@ -10,10 +10,21 @@ import { FaSmile, FaFastForward } from 'react-icons/fa'
 import { BsUniversalAccessCircle } from 'react-icons/bs'
 import Input from './utils/Input/Input'
 import { useState } from 'react';
+import Button from './utils/Button/Button'
 
 function App() {
 
   const [userEmail, setUserEmail] = useState("")
+
+  const handleShowSectionButton = (e) => {
+      e.preventDefault()
+
+      const formSection = document.getElementsByClassName('form-section')[0]
+      const emailSection = document.getElementsByClassName('user-email')[0]
+
+      emailSection.classList.add('hide')
+      formSection.classList.add('show')
+  }
 
   return (
     <div className='app'>
@@ -82,6 +93,9 @@ function App() {
           <Input 
             value={userEmail}
             event={(e) => {setUserEmail(e.target.value)}}
+          />
+          <Button 
+            event = {handleShowSectionButton}
           />
       </section>
 
