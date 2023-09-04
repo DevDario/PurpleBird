@@ -23,6 +23,7 @@ body{
 
 @media only screen and (max-width: 768px){
   .homeTitle{
-      font-size:2em;
+      font-size:1.8em;
+      line-height:1.7em;
   }
 }
