@@ -65,12 +65,12 @@ section{
 
 
 .hide{
-    transition:all 400ms ease;
+    transition:all 700ms ease-out;
     display:none;
 }
 
 
 .show{
-    transition:all 400ms ease;
+    transition:all 700ms ease-in;
     display:flex;
 }
