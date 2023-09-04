@@ -1,5 +1,5 @@
 import React from 'react'
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import Input from '../../utils/Input/Input'
 import Button from '../../utils/Button/Button'
 import style from './Form.module.css'
