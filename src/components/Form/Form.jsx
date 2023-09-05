@@ -3,11 +3,14 @@ import PropTypes from 'prop-types'
 import Input from '../../utils/Input/Input'
 import Button from '../../utils/Button/Button'
 import style from './Form.module.css'
-
+import {useState} from 'react'
 const Form = () => {
 
-    const handleFormSubmit = () => {
-        alert('your email')
+    const [userEmail, setUserEmail] = useState("")
+    const [message,setMessage] = useState("")
+
+    const handleFormSubmit = () =>{
+        console.log("Your email")
     }
 
   return (
@@ -20,6 +23,8 @@ const Form = () => {
                 textAlign={"left"}
                 width={"130%"}
                 textColor={"#fcfcfb"}
+                value={userEmail}
+                event={(e)=>{setUserEmail(e.target.value)}}
             />
             <label htmlFor="message">email</label>
             <Input
@@ -31,6 +36,8 @@ const Form = () => {
                 height={"200px"}
                 type={"text"}
                 borderRadius={"20px"}
+                value={message}
+                event={(e)=>{setMessage(e.target.value)}}
             />
             <Button
                 buttonText = {"send your email"}
