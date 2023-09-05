@@ -6,7 +6,13 @@ const Navbar = () => {
     <div className={style.Navbar}>
         <div className={style.logoBox}>
 
-            <img width="48" height="48" alt="Purple Bird" src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/7950F2/external-bird-origami-tanah-basah-glyph-tanah-basah.png"/>
+          {
+            <img width="48" height="48" alt="Purple Bird" src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/7950F2/external-bird-origami-tanah-basah-glyph-tanah-basah.png"/> && (
+
+              <img width="48" height="48" alt="Purple Bird" src="/public/favicon.png"/>
+            )
+
+          }
 
             <h1>PurpleBird</h1>
 
