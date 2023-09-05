@@ -19,3 +19,11 @@
     align-self:center;
     align-items:center;
 }
+
+@media only screen and (max-width: 768px){
+
+    .Navbar{
+        padding:2rem;
+        gap:2rem;
+    }
+}
