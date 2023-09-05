@@ -90,17 +90,17 @@ function App() {
 
         <div className="features-info">
           <Feature
-            icon={<BsUniversalAccessCircle size={"40px"} color={"#505050"} cursor={"help"}/>}
+            icon={<BsUniversalAccessCircle size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
           />
           
           <Feature
-            icon={<FaSmile size={"40px"} color={"#505050"} cursor={"help"}/>}
+            icon={<FaSmile size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
             alternativeText={"fun to use icon"}
             title={"it's fun"}
             description={"with an intuitive and user-friendly UI, we focused in proposing a fun experience for all users, using calm colors, and smooth fonts, with an easy and fast way to send your emails"}
           />
           <Feature
-            icon={<FaFastForward size={"40px"} color={"#505050"} cursor={"help"}/>}
+            icon={<FaFastForward size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
             alternativeText={"fast tool icon"}
             title={"it's fast"}
             description={"Our tool is very fast, so you dont have to waste your time login in others services to simple send an email. We use an simple and fast protocol and tools, for you to have a better and faster experience"}
