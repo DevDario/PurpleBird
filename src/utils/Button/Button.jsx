@@ -6,7 +6,9 @@ const Button = ({buttonText, buttonLink, name, event}) => {
   return (
     <button className={style.button} name={name} onClick={event}>
         <a href={buttonLink}>
-            {buttonText}
+            <p>
+              {buttonText}
+            </p>
         </a>
     </button>
   )
