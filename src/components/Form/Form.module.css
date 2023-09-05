@@ -1,26 +1,27 @@
 
 .form{
-    display:flex;
-    margin:0 auto;
-}
-
-.formSection{
-    display:flex;
-    flex-direction:column;
-    gap:.3em;
-    background-color:transparent;
-    border:.2em solid #26262609;
     width:100%;
     height:85%;
-    padding:.8rem;
+    display:flex;
+    justify-content:center;
     margin:0 auto;
+    border:.2em solid #26262609;
     transition:all 400ms ease-in;
     border-radius:2rem;
 }
 
-.formSection:hover{
+.form .formSection{
+    display:flex;
+    flex-direction:column;
+    gap:.3em;
+    background-color:transparent;
+    padding:.8rem;
+}
+
+.form:hover{
     transition:all 400ms ease-in;
-    border:.2em solid #26262610;
+    border:.2em solid #26262611;
+    border-radius:2rem;
 }
 
 
@@ -29,15 +30,14 @@
     color:#212121;
 }
 
-.formSection input::placeholder{
+.form .formSection input::placeholder{
     color:#c0c0c0;
 }
 
-.formSection input{
+.form .formSection input{
     border:none;
     background-color: #212121;
-    color:#fcfcfb;
-    padding:1em;
+    padding:.8em;
 }
 
 .formSection input[type="text"]{
@@ -47,13 +47,26 @@
 
 @media only screen and (max-width: 768px){
     
-    .formSection{
-        width: 70%;
+
+    .form{
+        width: 100%;
         height: 80%;
+    }
+
+    .formSection{
+        display: flex;
+        justify-content:center;
+        align-self:center;
+        padding:.6rem;
+        align-items:center;
         margin:0 auto;
     }
 
-    .formSection .input[type="text"]{
+    .form .formSection input{
+        width: 100%;
+    }
+
+    .form .formSection input[type="text"]{
         height:100px;
     }
   }
