@@ -18,14 +18,16 @@ const Form = () => {
                 name="email"
                 placeholder="ex: johndoe@gmail.com"
                 textAlign={"left"}
-                width={"40rem"}
+                width={"130%"}
+                textColor={"#fcfcfb"}
             />
             <label htmlFor="message">email</label>
             <Input
                 name="message"
                 placeholder="hello, John !"
-                textAlign={"start"}
-                width={"40rem"}
+                textAlign={"left"}
+                width={"130%"}
+                textColor={"#fcfcfb"}
                 height={"200px"}
                 type={"text"}
                 borderRadius={"20px"}
