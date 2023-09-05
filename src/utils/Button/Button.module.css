@@ -1,6 +1,7 @@
 .button{
     margin:.7em auto;
-    padding:.8rem 4rem;
+    width: 10rem;
+    height: 3rem;
     border:none;
     color:#fcfcfb;
     background-color: #212121;
@@ -14,7 +15,7 @@
 .button:hover{
     transition:all 200ms ease-in;
     background: linear-gradient(135deg, #a2c4fcd5 0%, #f3c1ffe1, #fdfd82e3 100%);
-    padding:.8rem 4.5rem;
+    width:13rem;
 }
 
 .button:hover a {
@@ -31,6 +32,16 @@
 
 @media only screen and (max-width: 768px){
     .button{
-        width: 30%;
+        width: 8rem;
     }
+
+    .button:hover{
+        width: 9.2rem;
+    }
+
+    .button a p {
+        text-align:center;
+        align-items:center;
+    }
+    
 }
