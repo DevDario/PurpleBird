@@ -4,6 +4,14 @@ section{
     align-items:center;
 }
 
+@media only screen and (max-width: 768px){
+    section{
+        margin:0 auto;
+        padding:1.3em;
+        align-items:center;
+    }
+}
+
 .sectionTitle{
     display:flex;
     justify-content:center;
