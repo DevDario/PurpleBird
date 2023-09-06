@@ -21,7 +21,7 @@ const Form = () => {
                 name="email"
                 placeholder="ex: johndoe@gmail.com"
                 textAlign={"left"}
-                width={"130%"}
+                width={"250%"}
                 textColor={"#fcfcfb"}
                 value={userEmail}
                 event={(e)=>{setUserEmail(e.target.value)}}
@@ -31,7 +31,7 @@ const Form = () => {
                 name="message"
                 placeholder="hello, John !"
                 textAlign={"left"}
-                width={"130%"}
+                width={"250%"}
                 textColor={"#fcfcfb"}
                 height={"200px"}
                 type={"text"}
