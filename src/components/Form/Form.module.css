@@ -1,6 +1,6 @@
 
 .form{
-    width:100%;
+    width:40%;
     height:85%;
     display:flex;
     justify-content:center;
@@ -16,6 +16,7 @@
     gap:.3em;
     background-color:transparent;
     padding:.8rem;
+    align-items:center;
 }
 
 .form:hover{
