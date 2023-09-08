@@ -15,7 +15,7 @@
 .button:hover{
     transition:all 200ms ease-in;
     background: linear-gradient(135deg, #a2c4fcd5 0%, #f3c1ffe1, #fdfd82e3 100%);
-    width:100%;
+    width:12.9rem;
 }
 
 .button:hover a {
