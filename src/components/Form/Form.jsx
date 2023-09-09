@@ -3,28 +3,64 @@ import PropTypes from 'prop-types'
 import Input from '../../utils/Input/Input'
 import Button from '../../utils/Button/Button'
 import style from './Form.module.css'
+import emailjs from 'emailjs-com'
+import emailjsConfig from '../../emailjsConfig.js'
 import {useState} from 'react'
-const Form = () => {
+const Form = ({reply_to}) => {
 
-    const [userEmail, setUserEmail] = useState("")
-    const [message,setMessage] = useState("")
+  const [formData, setFormData] = useState({
+    reply_to: reply_to,
+    to_email: '',
+    message: '',
+  })
+  
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  }
+      
+        const handleFormSubmit = (e) => {
+          e.preventDefault();
+          const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          const email = formData.to_email;
+          const message = formData.message;
 
-    const handleFormSubmit = () =>{
-        console.log("Your email")
-    }
+          if(emailPattern.test(email)){
+      
+          emailjs.send(
+            emailjsConfig.serviceID,
+            emailjsConfig.templateID,
+            formData,
+            emailjsConfig.userID
+          )
+            .then((response) => {
+              alert('Email sent successfully!')
+              console.log('Email sent successfully!',response)
+            })
+            .catch((error) => {
+              alert('Error sending the E-mail. Try again in a few seconds');
+              console.error('Error sending email:', error);
+            });
+        } else {
+          alert("You have to inform a valid E-mail Address")
+        }
+        }
 
   return (
     <form className={style.form}>
         <div className={style.formSection}>
             <label htmlFor='email'>your friends email</label>
             <Input
-                name="email"
+                name="to_email"
                 placeholder="ex: johndoe@gmail.com"
                 textAlign={"left"}
                 width={"250%"}
                 textColor={"#fcfcfb"}
-                value={userEmail}
-                event={(e)=>{setUserEmail(e.target.value)}}
+                value={formData.to_email}
+                event={handleChange}
             />
             <label htmlFor="message">email</label>
             <Input
@@ -36,8 +72,8 @@ const Form = () => {
                 height={"200px"}
                 type={"text"}
                 borderRadius={"20px"}
-                value={message}
-                event={(e)=>{setMessage(e.target.value)}}
+                value={formData.message}
+                event={handleChange}
             />
             <Button
                 buttonText = {"send your email"}
@@ -51,11 +87,11 @@ const Form = () => {
 }
 
 Form.propTypes = {
-
+    reply_to: PropTypes.string.isRequired
 }
 
 Form.defaultProps = {
-
+    reply_to: ''
 }
 
 export default Form
