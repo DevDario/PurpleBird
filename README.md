@@ -7,7 +7,7 @@ The e-mail features where featured by the [EmailJs](https://emailjs.org.com)
 
 With PurpleBird you can send fast, and easy e-mails to anyone, using your Gmail.
 You simple have to inform your e-mail, the receptor's e-mail, and of course, your message to him/her.
-It's sample as that !
+It's simple as that !
 
 ### Features
 
