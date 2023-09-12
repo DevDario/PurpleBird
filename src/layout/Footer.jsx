@@ -13,7 +13,7 @@ const Footer = () => {
            <p className={style.aboutDescription}>
             PurpleBird is a free open source e-mail sender.<br/>
             with PurpleBird you can send faster emails using the <br/>
-            MailGun API to send them, so you can have a better <br/>
+            EmailJS API to send them, so you can have a better <br/>
             experience and faster results.
            </p>
 
