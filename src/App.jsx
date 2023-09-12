@@ -12,6 +12,7 @@ import Input from './utils/Input/Input'
 import { useState } from 'react';
 import Button from './utils/Button/Button'
 import Form from './components/Form/Form'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 function App() {
 
@@ -50,12 +51,16 @@ function App() {
     <div className='app'>
       <Navbar/>
 
-      <h1 className='homeTitle'>
-        Send fast E-mails to your <br/>
-        friend using this amazing <br/>
-        browser tool !
-      </h1>
+    
+      <Slide direction='left'>
+        <h1 className='homeTitle'>
+          Send fast E-mails to your <br/>
+          friend using this amazing <br/>
+          browser tool !
+        </h1>
+      </Slide>
 
+    <Fade cascade>
       <section className="instructions">
         <Image
           imageSource={ReceptorImage}
@@ -81,6 +86,7 @@ function App() {
           height={"240px"}
         />
       </section>
+      </Fade>
 
       <section className="features">
 
@@ -88,24 +94,26 @@ function App() {
           Why you should use it
         </h1>
 
-        <div className="features-info">
-          <Feature
-            icon={<BsUniversalAccessCircle size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
-          />
+        <Fade cascade>
+          <div className="features-info">
+            <Feature
+              icon={<BsUniversalAccessCircle size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
+            />
           
-          <Feature
-            icon={<FaSmile size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
-            alternativeText={"fun to use icon"}
-            title={"it's fun"}
-            description={"with an intuitive and user-friendly UI, we focused in proposing a fun experience for all users, using calm colors, and smooth fonts, with an easy and fast way to send your emails"}
-          />
-          <Feature
-            icon={<FaFastForward size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
-            alternativeText={"fast tool icon"}
-            title={"it's fast"}
-            description={"Our tool is very fast, so you dont have to waste your time login in others services to simple send an email. We use an simple and fast protocol and tools, for you to have a better and faster experience"}
-          />
-        </div>
+            <Feature
+              icon={<FaSmile size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
+              alternativeText={"fun to use icon"}
+              title={"it's fun"}
+              description={"with an intuitive and user-friendly UI, we focused in proposing a fun experience for all users, using calm colors, and smooth fonts, with an easy and fast way to send your emails"}
+            />
+            <Feature
+              icon={<FaFastForward size={"40px"} color={"rgb(191, 100, 255)"} cursor={"help"}/>}
+              alternativeText={"fast tool icon"}
+              title={"it's fast"}
+              description={"Our tool is very fast, so you dont have to waste your time login in others services to simple send an email. We use an simple and fast protocol and tools, for you to have a better and faster experience"}
+            />
+          </div>
+        </Fade>
       </section>
 
       <section className="user-email">
