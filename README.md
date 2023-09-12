@@ -1,8 +1,20 @@
-# React + Vite
+# Purple Bird
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PurpleBird is a free, open source e-mail sender service, built with ReactJs (Vite).
+The e-mail features where featured by the [EmailJs](https://emailjs.org.com)
 
-Currently, two official plugins are available:
+## What It Does ?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+With PurpleBird you can send fast, and easy e-mails to anyone, using your Gmail.
+You simple have to inform your e-mail, the receptor's e-mail, and of course, your message to him/her.
+It's simple as that !
+
+### Features
+
+- It's Fast 🚀
+- It's Fun 😎
+- It's Easy 🙌🏻
+
+##
+
+Get started with PurpleBird right away !
