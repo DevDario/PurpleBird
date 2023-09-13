@@ -57,7 +57,7 @@ const Form = ({reply_to}) => {
                 name="to_email"
                 placeholder="ex: johndoe@gmail.com"
                 textAlign={"left"}
-                width={"250%"}
+                width={"300px"}
                 textColor={"#fcfcfb"}
                 value={formData.to_email}
                 event={handleChange}
@@ -67,7 +67,7 @@ const Form = ({reply_to}) => {
                 name="message"
                 placeholder="hello, John !"
                 textAlign={"left"}
-                width={"250%"}
+                width={"300px"}
                 textColor={"#fcfcfb"}
                 height={"200px"}
                 type={"text"}

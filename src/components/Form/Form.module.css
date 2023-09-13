@@ -63,7 +63,7 @@
     }
 
     .form .formSection input{
-        width: 100%;
+        width: 120px;
     }
 
     .form .formSection input[type="text"]{
