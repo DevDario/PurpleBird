@@ -26,7 +26,8 @@
 }
 
 .featureContainer .description{
-    color:#c0c0c0;
+    color:#8F8F8F;
+    font-weight:300;
 }
 
 @media only screen and (max-width: 600px){
