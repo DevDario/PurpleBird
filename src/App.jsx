@@ -16,10 +16,10 @@ import { FaSmile, FaFastForward } from 'react-icons/fa'
 import { BsUniversalAccessCircle } from 'react-icons/bs'
 import { Fade, Slide } from 'react-awesome-reveal'
 
-function App() {
+export default function App() {
 
   const [userEmail, setUserEmail] = useState("")
-  const [isSectionVisible, setIsSectionVisible] = useState(false)
+  const [isSectionVisible, setIsSectionVisible] = useState(!isSectionVisible)
 
   const toggleSectionVisibility = () => {
     setIsSectionVisible(!isSectionVisible)
@@ -143,5 +143,3 @@ function App() {
     </div>
   )
 }
-
-export default App
