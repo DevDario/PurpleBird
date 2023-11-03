@@ -2,8 +2,10 @@ import React from 'react'
 import style from './Footer.module.css'
 import Logo from '../utils/Logo/Logo'
 
-const Footer = () => {
+export default function Footer(){
+  
   return (
+    
     <footer className={style.footerContainer}>
       <div className={style.about}>
           
@@ -31,5 +33,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

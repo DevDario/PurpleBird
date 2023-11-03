@@ -1,23 +1,25 @@
 import './App.css'
+import { useState } from 'react'
 import Navbar from './layout/Navbar'
 import Footer from './layout/Footer'
+import Feature from './utils/Feature/Feature.jsx'
+import Input from './utils/Input/Input.jsx'
+import Form from './components/Form/Form.jsx'
+import Button from './utils/Button/Button'
 import Image from './utils/Image/Image'
+
 import ReceptorImage from './assets/receptorImage.png'
 import SendImage from './assets/safeImage.png'
 import EmailImage from './assets/emailImage.png'
-import Feature from './utils/Feature/Feature'
+
 import { FaSmile, FaFastForward } from 'react-icons/fa'
 import { BsUniversalAccessCircle } from 'react-icons/bs'
-import Input from './utils/Input/Input'
-import { useState } from 'react';
-import Button from './utils/Button/Button'
-import Form from './components/Form/Form'
 import { Fade, Slide } from 'react-awesome-reveal'
 
-function App() {
+export default function App() {
 
   const [userEmail, setUserEmail] = useState("")
-  const [isSectionVisible, setIsSectionVisible] = useState(false)
+  const [isSectionVisible, setIsSectionVisible] = useState(!isSectionVisible)
 
   const toggleSectionVisibility = () => {
     setIsSectionVisible(!isSectionVisible)
@@ -141,5 +143,3 @@ function App() {
     </div>
   )
 }
-
-export default App
