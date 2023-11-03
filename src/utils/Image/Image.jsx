@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import style from './Image.module.css'
 
-const Image = ({imageSource, width, height, radius, alternativeText, imageTitle, imageDescription, textAlign}) => {
+export default function Image ({imageSource, width, height, radius, alternativeText, imageTitle, imageDescription, textAlign})  {
   return (
     <section className={style.sectionContainer}>
         <img
@@ -52,5 +52,3 @@ Image.defaultProps = {
                      " more easly and faster",
     radius: "10px"
 }
-
-export default Image

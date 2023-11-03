@@ -8,7 +8,7 @@ import emailjsConfig from '../../emailjsConfig.js'
 import {useState} from 'react'
 
 
-const Form = ({reply_to}) => {
+export default function Form({reply_to}){
 
   const [formData, setFormData] = useState({
     reply_to: reply_to,
@@ -50,8 +50,11 @@ const Form = ({reply_to}) => {
         }
 
   return (
+    
     <form className={style.form}>
+    
         <div className={style.formSection}>
+        
             <label htmlFor='email'>your friends email</label>
             <Input
                 name="to_email"
@@ -62,6 +65,7 @@ const Form = ({reply_to}) => {
                 value={formData.to_email}
                 event={handleChange}
             />
+            
             <label htmlFor="message">email</label>
             <Input
                 name="message"
@@ -75,6 +79,7 @@ const Form = ({reply_to}) => {
                 value={formData.message}
                 event={handleChange}
             />
+            
             <Button
                 buttonText = {"send your email"}
                 name = {"send"}
@@ -93,5 +98,3 @@ Form.propTypes = {
 Form.defaultProps = {
     reply_to: ''
 }
-
-export default Form
