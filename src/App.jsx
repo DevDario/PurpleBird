@@ -19,7 +19,7 @@ import { Fade, Slide } from 'react-awesome-reveal'
 export default function App() {
 
   const [userEmail, setUserEmail] = useState("")
-  const [isSectionVisible, setIsSectionVisible] = useState(!isSectionVisible)
+  const [isSectionVisible, setIsSectionVisible] = useState(false)
 
   const toggleSectionVisibility = () => {
     setIsSectionVisible(!isSectionVisible)
