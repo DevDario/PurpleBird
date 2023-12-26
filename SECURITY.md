@@ -1,5 +1,3 @@
-Certainly! Here's a template for a `SECURITY.md` file outlining the security policy for your PurpleBird project:
-
 # Security Policy
 
 ## Reporting a Vulnerability
